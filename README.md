@@ -84,6 +84,19 @@
 
 ## 目标跟踪
 
+#### 综述一：无人机检测与跟踪｜[Deep Learning for UAV-based Object Detection and Tracking: A Survey](https://arxiv.org/abs/2110.12638v1)
+
+作者：Xin Wu, Wei Li, Danfeng Hong, Ran Tao, Qian Du<br>
+机构：Beijing Institute of Technology, Chinese Academy of Sciences, Mississippi State University<br>
+摘要：无人机(UAV)由于有效且灵活的数据采集，近年来已成为计算机视觉(CV)和遥感(RS)领域的研究热点。由于最近深度学习(DL)的成功，许多先进的目标检测和跟踪方法已被广泛应用于与无人机相关的各种任务，例如环境监测、精准农业、交通管理。本文全面综述了基于DL的无人机目标检测与跟踪方法的研究进展和前景。具体来说，我们首先概述了挑战，统计了现有的方法，并从基于DL的模型的角度提供了解决方案，这三个研究课题分别是:来自图像的目标检测，来自视频的目标检测，来自视频的目标跟踪。利用无人机主导目标检测与跟踪相关的开放数据集，利用4个基准数据集，采用最先进的方法进行性能评估。最后，对今后的工作进行了展望和总结。本文对基于DL的无人机目标探测与跟踪方法进行了综述，并对其进一步发展提出了一些思考，以期为来自遥感领域的研究人员提供参考。<br>
+- [无人机静态目标检测典型方法发展历程](https://tva1.sinaimg.cn/large/006C3FgEgy1gwwzl4x6bkj31fy0vm4km.jpg) | [基于深度学习的无人机静态目标检测方法](https://tva1.sinaimg.cn/large/006C3FgEgy1gwwzn8zmgpj31gi0qu4g4.jpg)
+- [无人机视频目标检测典型方法发展历程](https://tva1.sinaimg.cn/large/006C3FgEgy1gwwzojfwqij31hq0qw4aj.jpg) | [基于深度学习的无人机视频目标检测方法](https://tva1.sinaimg.cn/large/006C3FgEgy1gwwzoyf5hvj31gi0bkn2k.jpg)
+- [无人机视频目标跟踪典型方法发展历程](https://tva1.sinaimg.cn/large/006C3FgEgy1gwwzpgghmaj31h20qugv4.jpg) | [基于深度学习的无人机视频目标跟踪方法](https://tva1.sinaimg.cn/large/006C3FgEgy1gwwzq2330tj31gi0lctls.jpg)
+- [当前最先进的无人机基准和数据集的比较](https://tva1.sinaimg.cn/large/006C3FgEgy1gwwzqtb7b1j31i00wy1d2.jpg)
+- [无人机专属检测网络和经典检测网络的性能比较](https://tva1.sinaimg.cn/large/006C3FgEgy1gwwzsb90q8j317q0ze1ij.jpg) | [在 UAVDT-DET 测试集上的目标检测结果](https://tva1.sinaimg.cn/large/006C3FgEgy1gwwzta673sj31fo0bugsv.jpg)
+- [以 MOTA、MOTP 等为评估指标的 UAVDT 数据集的 UAV 专属跟踪网络和经典跟踪网络的性能比较](https://tva1.sinaimg.cn/large/006C3FgEgy1gwwzu5r26aj31fg0g2alu.jpg) 
+- [无人机专属统计目标检测方法的计算成本](https://tva1.sinaimg.cn/large/006C3FgEgy1gwwzuw3cfbj31dq0vyqnf.jpg) | [无人机专专属的基于深度学习的视频目标检测方法的计算成本](https://tva1.sinaimg.cn/large/006C3FgEgy1gwwzwdaab4j31ga0fs484.jpg) | [无人机专用的基于深度学习的多目标跟踪的计算成本](https://tva1.sinaimg.cn/large/006C3FgEgy1gwwzx80g32j31gq0q0k7u.jpg)
+
 
 <br><br>  
 
