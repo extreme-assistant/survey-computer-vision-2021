@@ -24,7 +24,15 @@
 摘要：由于现实世界数据的长尾分布和削减数据收集和注释成本的迫切需求，学习适应具有少量标记数据的新类的少样本目标检测是一个迫切和长期的问题。近年来，一些研究探讨了如何在不需要目标域监督的情况下，在额外数据集中使用隐式线索来帮助少样本检测器完善鲁棒任务概念。本综述从当前的经典和最新研究成果，以及未来的研究展望，从多方面进行了综述。特别地，我们首先提出了基于数据的训练数据分类和在训练阶段访问的相应监督形式。按照这种分类法，我们对正式定义、主要挑战、基准数据集、评估指标和学习策略进行了重要的回顾。此外，我们还详细研究了如何相互作用的目标检测方法，以系统地发展这一问题。最后，总结了少样本目标检测的研究现状及未来的研究方向。<br>
 - [近期小样本目标检测算法概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwqfqcvlsfj31ii0v07im.jpg)
 
+#### 综述二：自监督小样本检测｜[A Survey of Self-Supervised and Few-Shot Object Detection](https://arxiv.org/abs/2110.14711)
 
+[project](https://gabrielhuang.github.io/fsod-survey/)<br>
+作者：Gabriel Huang, Issam Laradji, David Vazquez, Simon Lacoste-Julien, Pau Rodriguez<br>
+机构：Université de Montréal<br>
+摘要：标记数据通常是昂贵和耗时的，特别是对于目标检测和实例分割等任务，这需要密集的图像标记。虽然少样本目标检测是关于用很少的数据在新的(看不见的)目标类上训练模型，但它仍然需要在许多标记的基类(见)的示例上进行预训练。另一方面，自监督方法旨在从未标记的数据中学习表示，这些数据可以很好地转移到下游任务，如目标检测。将少样本和自监督目标检测相结合是一个很有前景的研究方向。在这个综述中，我们回顾和描述了最近的方法在少样本和自监督的目标检测。然后，我们给出了主要的结论，并讨论了未来的研究方向。<br>
+- [文中所有目标检测方法分类](https://tva1.sinaimg.cn/large/006C3FgEgy1gww6r9136jj316w0xondm.jpg)
+- [在 PASCAL VOC 和 MS COCO 数据集上的方法结果对比](https://tva1.sinaimg.cn/large/006C3FgEgy1gww77dhzkqj31d80ygk97.jpg)
+- [在未标注的 ImageNet 上预训练的自监督目标检测方法比较](https://tva1.sinaimg.cn/large/006C3FgEgy1gww78snik4j31f60oy4as.jpg)
 
 <br><br>
 
@@ -109,20 +117,23 @@
 
 ## Attention/Transformer
 
-[1] Attention Mechanisms in Computer Vision: A Survey<br>
+**[1] Attention Mechanisms in Computer Vision: A Survey**<br>
 [paper](https://arxiv.org/abs/2111.07624) | [code](https://github.com/MenghaoGuo/Awesome-Vision-Attentions)<br>
 作者：Meng-Hao Guo, Tian-Xing Xu, Jiang-Jiang Liu, Zheng-Ning Liu, Peng-Tao Jiang, Tai-Jiang Mu, Song-Hai Zhang, Ralph R. Martin, Ming-Ming Cheng, Shi-Min Hu<br>
 机构：Tsinghua University,Nankai University,Cardiff University<br>
 摘要：人类可以自然有效地在复杂的场景中找到显著区域。为了模仿人类视觉系统的这一功能，注意力机制被引入到计算机视觉中。这种注意力机制可以看作是一个基于输入图像特征的动态权值调整过程。注意力机制在图像分类、目标检测、语义分割、视频理解、图像生成、三维视觉、多模态任务和自监督学习等视觉任务中取得了巨大的成功。本文综述了计算机视觉中的各种注意力机制，并对其进行了分类，如通道注意力、空间注意力、时间注意力和分支注意力。本文还提出了注意机力制研究的未来方向。
 - [注意力机制关键发展历程1](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowdfj2z6j31g80o6ame.jpg) ｜ [注意力机制关键发展历程2](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowg3vxqxj312g11in5o.jpg)
-- [有代表性的通道注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowhg6uxxj31ea0q2qgj.jpg) | [有代表性的空间注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowhxdgenj31g40zoqmc.jpg) ｜ [有代表性的时间注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowilxvdrj31eq0fy46q.jpg) | [有代表性的分支注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowk45pqsj31e80euguj.jpg) | [有代表性的通道&空间注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowl29j15j31280zm16o.jpg) | [有代表性的空间&时间注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowlt98lgj31fo0mg14i.jpg)
+- [有代表性的通道注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowhg6uxxj31ea0q2qgj.jpg) | [有代表性的空间注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowhxdgenj31g40zoqmc.jpg) ｜ [有代表性的时间注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowilxvdrj31eq0fy46q.jpg) | [有代表性的分支注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowk45pqsj31e80euguj.jpg) | [有代表性的通道&空间注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowl29j15j31280zm16o.jpg) | [有代表性的空间&时间注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowlt98lgj31fo0mg14i.jpg)<br><br>
 
-[2] A Survey of Visual Transformers<br>
+**[2] A Survey of Visual Transformers**<br>
 [paper](https://arxiv.org/abs/2111.06091v2)<br>
 作者：Yang Liu, Yao Zhang, Yixin Wang, Feng Hou, Jin Yuan, Jiang Tian, Yang Zhang, Zhongchao Shi, Jianping Fan, Zhiqiang He<br>
 机构：University of Chinese Academy of Sciences, Southeast University, Lenovo Ltd
 摘要：Transformer 是一种基于注意力的编码器-解码器架构，彻底改变了自然语言处理领域。受这一重大成就的启发，最近在将类似 Transformer 的体系结构应用于计算机视觉 领域方面进行了一些开创性工作，这些工作已经证明了它们在各种 CV 任务上的有效性。与 CNN 相比，visual Transformers 依靠有竞争力的建模能力，在 ImageNet、COCO 和 ADE20k 等多个基准测试中取得了令人印象深刻的性能。在本文中，我们全面回顾了针对三个基本 CV 任务（分类、检测和分割）的一百多种不同的视觉变换器，其中提出了一种分类法来根据它们的动机、结构和使用场景来组织这些方法. 由于训练设置和面向任务的差异，我们还在不同的配置上评估了这些方法，以方便直观地进行比较，而不仅仅是各种基准测试。此外，我们揭示了一系列基本但未开发的方面，这些方面可能使 Transformer 从众多架构中脱颖而出，例如，松弛的高级语义嵌入以弥合视觉和顺序 Transformer 之间的差距。最后，提出了三个有前景的未来研究方向，以供进一步研究。<br>
-- 详细中文解读：[中国科学院、东南大学等联合发表最新的视觉 Transformer 综述](https://bbs.cvmart.net/articles/5763)
+- 详细中文解读：[中国科学院、东南大学等联合发表最新的视觉 Transformer 综述](https://bbs.cvmart.net/articles/5763)<br><br>
+
+**[3] Are we ready for a new paradigm shift? A Survey on Visual Deep MLP**<br>
+[paper](https://arxiv.org/abs/2111.04060)<br><br>
 
 
 
