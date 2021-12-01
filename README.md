@@ -9,7 +9,8 @@
 * [目标跟踪](#4)<br>
 * [人脸](#5)<br>
 * [三维视觉](#6)<br>
-* [Attetion/Transformer](#7)
+* [网络架构设计](#7)
+* [暂未分类](#8)
 
 <br><br>
 
@@ -128,25 +129,53 @@
 
 <a name="7"/>
 
-## Attention/Transformer
+## 网络架构设计
 
-**[1] Attention Mechanisms in Computer Vision: A Survey**<br>
-[paper](https://arxiv.org/abs/2111.07624) | [code](https://github.com/MenghaoGuo/Awesome-Vision-Attentions)<br>
+#### 综述一：Attention | [Attention Mechanisms in Computer Vision: A Survey](https://arxiv.org/abs/2111.07624)
+
+[code](https://github.com/MenghaoGuo/Awesome-Vision-Attentions)<br>
 作者：Meng-Hao Guo, Tian-Xing Xu, Jiang-Jiang Liu, Zheng-Ning Liu, Peng-Tao Jiang, Tai-Jiang Mu, Song-Hai Zhang, Ralph R. Martin, Ming-Ming Cheng, Shi-Min Hu<br>
 机构：Tsinghua University,Nankai University,Cardiff University<br>
 摘要：人类可以自然有效地在复杂的场景中找到显著区域。为了模仿人类视觉系统的这一功能，注意力机制被引入到计算机视觉中。这种注意力机制可以看作是一个基于输入图像特征的动态权值调整过程。注意力机制在图像分类、目标检测、语义分割、视频理解、图像生成、三维视觉、多模态任务和自监督学习等视觉任务中取得了巨大的成功。本文综述了计算机视觉中的各种注意力机制，并对其进行了分类，如通道注意力、空间注意力、时间注意力和分支注意力。本文还提出了注意机力制研究的未来方向。
 - [注意力机制关键发展历程1](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowdfj2z6j31g80o6ame.jpg) ｜ [注意力机制关键发展历程2](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowg3vxqxj312g11in5o.jpg)
 - [有代表性的通道注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowhg6uxxj31ea0q2qgj.jpg) | [有代表性的空间注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowhxdgenj31g40zoqmc.jpg) ｜ [有代表性的时间注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowilxvdrj31eq0fy46q.jpg) | [有代表性的分支注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowk45pqsj31e80euguj.jpg) | [有代表性的通道&空间注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowl29j15j31280zm16o.jpg) | [有代表性的空间&时间注意力机制概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwowlt98lgj31fo0mg14i.jpg)<br><br>
 
-**[2] A Survey of Visual Transformers**<br>
-[paper](https://arxiv.org/abs/2111.06091v2)<br>
+#### 综述二：Transformer | [A Survey of Visual Transformers](https://arxiv.org/abs/2111.06091v2)<br>
+
 作者：Yang Liu, Yao Zhang, Yixin Wang, Feng Hou, Jin Yuan, Jiang Tian, Yang Zhang, Zhongchao Shi, Jianping Fan, Zhiqiang He<br>
 机构：University of Chinese Academy of Sciences, Southeast University, Lenovo Ltd
 摘要：Transformer 是一种基于注意力的编码器-解码器架构，彻底改变了自然语言处理领域。受这一重大成就的启发，最近在将类似 Transformer 的体系结构应用于计算机视觉 领域方面进行了一些开创性工作，这些工作已经证明了它们在各种 CV 任务上的有效性。与 CNN 相比，visual Transformers 依靠有竞争力的建模能力，在 ImageNet、COCO 和 ADE20k 等多个基准测试中取得了令人印象深刻的性能。在本文中，我们全面回顾了针对三个基本 CV 任务（分类、检测和分割）的一百多种不同的视觉变换器，其中提出了一种分类法来根据它们的动机、结构和使用场景来组织这些方法. 由于训练设置和面向任务的差异，我们还在不同的配置上评估了这些方法，以方便直观地进行比较，而不仅仅是各种基准测试。此外，我们揭示了一系列基本但未开发的方面，这些方面可能使 Transformer 从众多架构中脱颖而出，例如，松弛的高级语义嵌入以弥合视觉和顺序 Transformer 之间的差距。最后，提出了三个有前景的未来研究方向，以供进一步研究。<br>
 - 详细中文解读：[中国科学院、东南大学等联合发表最新的视觉 Transformer 综述](https://bbs.cvmart.net/articles/5763)<br><br>
 
-**[3] Are we ready for a new paradigm shift? A Survey on Visual Deep MLP**<br>
-[paper](https://arxiv.org/abs/2111.04060)<br><br>
+#### 综述三：MLP | [Are we ready for a new paradigm shift? A Survey on Visual Deep MLP](https://arxiv.org/abs/2111.04060)<br>
+
+
+
+<br><br>
+
+<a name="8"/>
+
+## 暂未分类
+
+#### 自监督特征学习(TPAMI2021) | [Self-supervised Visual Feature Learning with Deep Neural Networks: A Survey](https://arxiv.org/abs/1902.06162v1)
+
+作者：Longlong Jing, Yingli Tian<br>
+机构：The City University of New York<br>
+摘要：为了在计算机视觉应用中学习得到更好的图像和视频特征，通常需要大规模的标记数据来训练深度神经网络。为了避免收集和标注大量的数据所需的巨大开销，作为无监督学习方法的一个子方法——自监督学习方法，可以在不使用任何人类标注的标签的情况下，从大规模无标记数据中学习图像和视频的一般性特征。本文对基于深度学习的自监督一般性视觉特征学习方法做了综述。首先，描述了该领域的动机和一些专业性术语。在此基础上，总结了常用的用于自监督学习的深度神经网络体系结构。接下来，回顾了自监督学习方法的模式和评价指标，并介绍了常用的图像和视频数据集以及现有的自监督视觉特征学习方法。最后，总结和讨论了基于标准数据集的性能比较方法在图像和视频特征学习中的应用。<br>
+- [自监督视觉特征学习的前置任务分类](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyh9d1wx4j31ao0xinj1.jpg)
+- [常见的视频/图片数据集](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyhbxjbx5j31em0iqn8m.jpg)
+- [基于前置任务分类的自监督图片特征学习方法概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyhd0kynhj31a00ve1ge.jpg) ｜ [基于前置任务分类的自监督视频特征学习方法概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyhe8goeej31bc0w8had.jpg)
+- [使用来自 AlexNet 卷积层作为特征的激活在 ImageNet 和 Places 数据集上进行线性分类](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyhflvuqpj31ja0j24ao.jpg)
+- [在 PASCAL VOC 数据集上比较自监督图片特征学习在分类、检测、分割任务上的表现](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyhzz3m8ej31h40o6gxe.jpg) | [在 UCF101 和 HMDB51数据上比较动作识别任务上的自监督特征学习方法](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyi1x1mfvj30s60lsdnf.jpg)
+
+#### 长尾学习 | [Deep Long-Tailed Learning: A Survey](https://arxiv.org/abs/2110.04596)
+
+作者：Yifan Zhang, Bingyi Kang, Bryan Hooi, Shuicheng Yan, Jiashi Feng<br>
+机构：National University of Singapore, Singapore, SEA AI Lab<br>
+摘要：深度长尾学习是视觉识别中最具挑战性的问题之一，其目标是从大量遵循长尾类分布的图像中训练出性能良好的深度模型。在过去的十年中，深度学习已经成为一种学习高质量图像表示的强大的识别模型，并导致了一般视觉识别的显著突破。然而，长尾类不平衡是实际视觉识别任务中普遍存在的问题，这种不平衡往往限制了基于深度网络的识别模型在实际应用中的实用性，因为长尾类容易偏向主导类，在尾类上的表现较差。为了解决这一问题，近年来人们进行了大量的研究，在深度长尾学习领域取得了可喜的进展。鉴于该领域的快速发展，本文对深度长尾学习的最新进展进行了综述。具体地说，我们将已有的深度长尾学习研究分为三类(即类重平衡、信息增强和模块改进)，并根据这三类对这些方法进行了详细的回顾。之后，我们通过一种新提出的评价指标，即相对准确性，来评估它们在多大程度上解决了阶级失衡问题，从而对几种最先进的方法进行了实证分析。最后，我们强调了深度长尾学习的重要应用，并确定了未来研究的几个有前景的方向。<br>
+- [2021年中之前在顶会上发表的深度长尾学习方法总结](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyifyaa9nj30rw0zathg.jpg),[code](https://github.com/Vanint/Awesome-LongTailed-Learning)
+- [在 ImageNet-LT 上 90 或 200 个epochs下的Acc, UA, RA](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyiixbwofj30qe0t27dx.jpg) | [在 ImageNet-LT 上 90 或 200 个 epochs 下关于头部、中间和尾部类别的精度](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyijdp7c0j30o40tcaj2.jpg)
+- [长尾学习方法在 200 个 epoch 下的精度和相对精度方面的性能曲线](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyiwzde2fj313g0u848v.jpg)
 
 
 
