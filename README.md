@@ -10,7 +10,8 @@
 * [人脸](#5)<br>
 * [三维视觉](#6)<br>
 * [网络架构设计](#7)
-* [暂未分类](#8)
+* [超分辨率](#8)
+* [暂未分类](#100)
 
 <br><br>
 
@@ -150,10 +151,28 @@
 #### 综述三：MLP | [Are we ready for a new paradigm shift? A Survey on Visual Deep MLP](https://arxiv.org/abs/2111.04060)<br>
 
 
+<br><br>  
+
+<a name="8"/>
+
+## 超分辨率
+
+#### 综述一：单图像超分 | [From Beginner to Master: A Survey for Deep Learning-based Single-Image Super-Resolution](https://arxiv.org/abs/2109.14335)
+
+[project](https://github.com/CV-JunchengLi/SISR-Survey)<br>
+作者：Juncheng Li, Zehua Pei, Tieyong Zeng<br>
+机构：The Chinese University of Hong Kong<br>
+摘要：单图像超分辨率(SISR)是图像处理中的一项重要任务，其目的是提高成像系统的分辨率。近年来，在深度学习(deep learning, DL)的帮助下，SISR取得了巨大的飞跃，并取得了可喜的成果。在本文中，我们概述了基于深度学习的SISR方法，并根据它们的目标，如重建效率、重建精度和感知精度进行分组。具体地，首先介绍了问题的定义、研究背景和研究意义。其次，介绍了相关工作，包括基准数据集、上采样方法、优化目标和图像质量评价方法。第三，详细介绍了系统集成研究的基本原理，并给出了系统集成研究的一些具体应用。第四，我们给出了一些经典的SISR方法的重构结果，直观地了解了它们的性能。最后，本文还讨论了该研究中存在的一些问题，并总结了一些新的发展趋势和未来的发展方向。这是对SISR的详细调研，有助于研究者更好地理解SISR，并激发更多的研究。<br>
+- [四类单图像超分方法](https://tva1.sinaimg.cn/large/006C3FgEgy1gx6iuh8bwsj31i40xetnx.jpg)
+- [单图像超分数据集概括](https://tva1.sinaimg.cn/large/006C3FgEgy1gx6iw3r2kbj31gi0piduo.jpg)
+- [PSNR/SSIM对比](https://tva1.sinaimg.cn/large/006C3FgEgy1gx6k5yg93sj31060zoh70.jpg)
+- 
+
+
 
 <br><br>
 
-<a name="8"/>
+<a name="100"/>
 
 ## 暂未分类
 
@@ -166,7 +185,7 @@
 - [常见的视频/图片数据集](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyhbxjbx5j31em0iqn8m.jpg)
 - [基于前置任务分类的自监督图片特征学习方法概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyhd0kynhj31a00ve1ge.jpg) ｜ [基于前置任务分类的自监督视频特征学习方法概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyhe8goeej31bc0w8had.jpg)
 - [使用来自 AlexNet 卷积层作为特征的激活在 ImageNet 和 Places 数据集上进行线性分类](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyhflvuqpj31ja0j24ao.jpg)
-- [在 PASCAL VOC 数据集上比较自监督图片特征学习在分类、检测、分割任务上的表现](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyhzz3m8ej31h40o6gxe.jpg) | [在 UCF101 和 HMDB51数据上比较动作识别任务上的自监督特征学习方法](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyi1x1mfvj30s60lsdnf.jpg)
+- [在 PASCAL VOC 数据集上比较自监督图片特征学习在分类、检测、分割任务上的表现](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyhzz3m8ej31h40o6gxe.jpg) | [在 UCF101 和 HMDB51数据上比较动作识别任务上的自监督特征学习方法](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyi1x1mfvj30s60lsdnf.jpg)<br><br>
 
 #### 长尾学习 | [Deep Long-Tailed Learning: A Survey](https://arxiv.org/abs/2110.04596)
 
@@ -175,7 +194,21 @@
 摘要：深度长尾学习是视觉识别中最具挑战性的问题之一，其目标是从大量遵循长尾类分布的图像中训练出性能良好的深度模型。在过去的十年中，深度学习已经成为一种学习高质量图像表示的强大的识别模型，并导致了一般视觉识别的显著突破。然而，长尾类不平衡是实际视觉识别任务中普遍存在的问题，这种不平衡往往限制了基于深度网络的识别模型在实际应用中的实用性，因为长尾类容易偏向主导类，在尾类上的表现较差。为了解决这一问题，近年来人们进行了大量的研究，在深度长尾学习领域取得了可喜的进展。鉴于该领域的快速发展，本文对深度长尾学习的最新进展进行了综述。具体地说，我们将已有的深度长尾学习研究分为三类(即类重平衡、信息增强和模块改进)，并根据这三类对这些方法进行了详细的回顾。之后，我们通过一种新提出的评价指标，即相对准确性，来评估它们在多大程度上解决了阶级失衡问题，从而对几种最先进的方法进行了实证分析。最后，我们强调了深度长尾学习的重要应用，并确定了未来研究的几个有前景的方向。<br>
 - [2021年中之前在顶会上发表的深度长尾学习方法总结](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyifyaa9nj30rw0zathg.jpg),[code](https://github.com/Vanint/Awesome-LongTailed-Learning)
 - [在 ImageNet-LT 上 90 或 200 个epochs下的Acc, UA, RA](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyiixbwofj30qe0t27dx.jpg) | [在 ImageNet-LT 上 90 或 200 个 epochs 下关于头部、中间和尾部类别的精度](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyijdp7c0j30o40tcaj2.jpg)
-- [长尾学习方法在 200 个 epoch 下的精度和相对精度方面的性能曲线](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyiwzde2fj313g0u848v.jpg)
+- [长尾学习方法在 200 个 epoch 下的精度和相对精度方面的性能曲线](https://tva1.sinaimg.cn/large/006C3FgEgy1gwyiwzde2fj313g0u848v.jpg)<br><br>
+
+#### 激活函数 | [A Comprehensive Survey and Performance Analysis of Activation Functions in Deep Learning](https://arxiv.org/abs/2109.14545v1)
+
+[code](https://github.com/shivram1987/ActivationFunctions)<br>
+作者：Shiv Ram Dubey, Satish Kumar Singh, Bidyut Baran Chaudhuri<br>
+摘要：近年来，神经网络在解决许多问题方面有了巨大的发展。不同类型的神经网络被引入来处理不同类型的问题。然而，任何神经网络的主要目标是将非线性可分的输入数据转换为更线性可分的抽象特征，使用层次结构。这些层是线性和非线性函数的组合。最流行和常见的非线性层是激活函数(AFs)，如Logistic Sigmoid、Tanh、ReLU、ELU、Swish和Mish。本文对深度学习神经网络中的激活函数AFs进行了全面的综述和研究。不同类别的AFs，如Logistic Sigmoid和基于Tanh，基于ReLU，基于ELU，和基于Learning。指出了AFs的输出范围、单调性和平滑性等特点。并对18种最先进的AFs在不同网络上的性能进行了比较。本文提出了AFs的见解，以帮助研究者进行进一步的研究，并帮助实践者在不同的选择中进行选择。用于实验比较的代码。<br><br>
+
+#### 元学习 | [Multimodality in Meta-Learning: A Comprehensive Survey](https://arxiv.org/abs/2109.13576v1)
+
+作者：Yao Ma, Shilin Zhao, Weixiao Wang, Yaoman Li, Irwin King<br>
+摘要：作为一种比传统机器学习方法更有效的训练框架，元学习获得了广泛的欢迎。然而，在多模态任务等复杂任务分布中，其泛化能力尚未得到深入研究。近年来，基于多模态的元学习出现了一些研究。本综述从方法论和应用方面提供了基于多模态的元学习景观的全面概述。我们首先对元学习和多模态的定义进行了形式化的界定，并提出了这一新兴领域的研究挑战，如何丰富少样本或零样本情况下的输入，以及如何将模型泛化到新的任务中。然后我们提出了一个新的分类系统，系统地讨论了结合多模态任务的典型元学习算法。我们对相关论文的贡献进行了调研，并对其进行了分类总结。最后，提出了该领域的研究方向。<br><br>
+
+
+
 
 
 
