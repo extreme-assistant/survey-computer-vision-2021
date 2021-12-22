@@ -36,6 +36,15 @@
 - [在 PASCAL VOC 和 MS COCO 数据集上的方法结果对比](https://tva1.sinaimg.cn/large/006C3FgEgy1gww77dhzkqj31d80ygk97.jpg)
 - [在未标注的 ImageNet 上预训练的自监督目标检测方法比较](https://tva1.sinaimg.cn/large/006C3FgEgy1gww78snik4j31f60oy4as.jpg)
 
+#### 综述三：小样本目标检测｜[A Survey of Deep Learning for Low-Shot Object Detection](https://arxiv.org/pdf/2112.02814v2.pdf)
+
+作者：Qihan Huang, Haofei Zhang, Jie Song, Mingli Song<br>
+机构：浙江大学<br>
+摘要：本文对少样本目标检测(few-shot Object Detection, FSOD)和零样本目标检测(zero-shot Object Detection, ZSD)进行了全面的研究阐述。将FSOD和ZSD的方法分为不同的类别，并讨论了它们的优缺点。其次，本综述回顾了FSOD和ZSD的数据集设置和评估指标，然后分析了不同方法在这些基准上的性能。最后，本综述讨论了FSOD和ZSD未来面临的挑战和发展方向。<br>
+- [综述概述](https://tva1.sinaimg.cn/large/006C3FgEgy1gxmsv3g6i7j31g00xmasq.jpg)，本文将低样本目标检测分为单样本目标检测、少样本目标检测和零样本目标检测三个领域，用三种颜色演示了这三个域的更细粒度的分类，并总结了OSOD、FS和ZSD的基准，比较分析了不同LSOD方法在这些基准上的性能。
+- [在MS COCO基准上的ZSD方法性能表现](https://tva1.sinaimg.cn/large/006C3FgEgy1gxmsy5yp31j31g00wetof.jpg)
+
+
 <br><br>
 
 <a name="2"/>
