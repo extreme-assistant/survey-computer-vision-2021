@@ -26,6 +26,8 @@
 摘要：由于现实世界数据的长尾分布和削减数据收集和注释成本的迫切需求，学习适应具有少量标记数据的新类的少样本目标检测是一个迫切和长期的问题。近年来，一些研究探讨了如何在不需要目标域监督的情况下，在额外数据集中使用隐式线索来帮助少样本检测器完善鲁棒任务概念。本综述从当前的经典和最新研究成果，以及未来的研究展望，从多方面进行了综述。特别地，我们首先提出了基于数据的训练数据分类和在训练阶段访问的相应监督形式。按照这种分类法，我们对正式定义、主要挑战、基准数据集、评估指标和学习策略进行了重要的回顾。此外，我们还详细研究了如何相互作用的目标检测方法，以系统地发展这一问题。最后，总结了少样本目标检测的研究现状及未来的研究方向。<br>
 - [近期小样本目标检测算法概览](https://tva1.sinaimg.cn/large/006C3FgEgy1gwqfqcvlsfj31ii0v07im.jpg)
 
+<br><br>
+
 #### 综述二：自监督小样本检测｜[A Survey of Self-Supervised and Few-Shot Object Detection](https://arxiv.org/abs/2110.14711)
 
 [project](https://gabrielhuang.github.io/fsod-survey/)<br>
@@ -35,6 +37,8 @@
 - [文中所有目标检测方法分类](https://tva1.sinaimg.cn/large/006C3FgEgy1gww6r9136jj316w0xondm.jpg)
 - [在 PASCAL VOC 和 MS COCO 数据集上的方法结果对比](https://tva1.sinaimg.cn/large/006C3FgEgy1gww77dhzkqj31d80ygk97.jpg)
 - [在未标注的 ImageNet 上预训练的自监督目标检测方法比较](https://tva1.sinaimg.cn/large/006C3FgEgy1gww78snik4j31f60oy4as.jpg)
+
+<br><br>
 
 #### 综述三：小样本目标检测｜[A Survey of Deep Learning for Low-Shot Object Detection](https://arxiv.org/pdf/2112.02814v2.pdf)
 
@@ -79,6 +83,8 @@
 - [数据集概述](https://tva1.sinaimg.cn/large/006C3FgEgy1gwov9ewwy7j31460w8n5l.jpg)
 - [方法概览1](https://tva1.sinaimg.cn/large/006C3FgEgy1gwovbb04b3j31ei0yk16f.jpg) | [方法概览2](https://tva1.sinaimg.cn/large/006C3FgEgy1gwovd0mpeej31eg0ysgzl.jpg)
 - [编码器使用情况](https://tva1.sinaimg.cn/large/006C3FgEgy1gwovfx69smj319e0xaqjp.jpg)
+
+<br><br>
 
 #### 综述二：医学图像分割｜[A Review on The Division of Magnetic Resonant Prostate Images with Deep  Learning](https://arxiv.org/abs/2111.10683)
 
@@ -160,7 +166,7 @@
 #### 综述三：Attention| [Neural Attention Models in Deep Learning: Survey and Taxonomy](https://arxiv.org/pdf/2112.05909.pdf)
 
 作者：Alana de Santana Correia, Esther Luna Colombini<br>
-机构：University of Campinas<br>
+机构：University of Campinas<br><br>
 
 #### 综述四：MLP | [Are we ready for a new paradigm shift? A Survey on Visual Deep MLP](https://arxiv.org/abs/2111.04060)<br>
 
@@ -224,6 +230,20 @@
 
 作者：Junyu Xuan, Jie Lu, Guangquan Zhang<br>
 摘要：迁移学习是指从源领域提取可迁移知识并将其重用到目标领域的行为，已成为人工智能领域的研究热点。概率图模型(PGMs)作为一种建模复杂系统的强大工具，具有处理不确定性的能力和良好的可解释性。考虑到上述两个研究领域的成功，将PGMs应用于迁移学习似乎是很自然的。然而，尽管在文献中已经有一些优秀的迁移学习特异性PGMs，但PGMs在这一问题上的潜力仍然被严重低估。本文旨在通过以下几个方面促进迁移学习的知识迁移模型的发展:1)考察迁移学习的知识迁移模型的试点研究，即分析和总结现有的专门设计的知识迁移机制;2)讨论现有PGM成功应用于实际迁移问题的例子;3)利用PGM探讨迁移学习的几个潜在研究方向。<br><br>
+
+#### 无监督域适应 | [A Survey of Unsupervised Domain Adaptation for Visual Recognition](https://arxiv.org/pdf/2112.06745v1.pdf)
+
+作者：Youshan Zhang<br>
+机构：Lehigh University<br>
+摘要：虽然在许多领域生成并提供了大量未标记数据，但对自动理解可视化数据的需求比以往任何时候都要高。大多数现有的机器学习模型通常依赖于大量带标签的训练数据来实现高性能。不幸的是，这样的需求在真实的应用中无法满足。标签的数量是有限的，手动注释数据是昂贵和耗时的。通常需要将知识从现有的标记领域迁移到新的领域。然而，模型性能会因为域之间的差异而降低(域移位或数据集偏差)。为了克服标注的负担，领域适应(Domain Adaptation, DA)旨在缓解知识从一个领域转移到另一个相似但不同的领域时的领域转移问题。无监督DA (UDA)处理有标记的源域和无标记的目标域。UDA的主要目标是减少带标签源数据和未带标签目标数据之间的域差异，并在训练过程中学习跨两个域的域不变表示。本文首先定义了UDA问题。其次，我们从传统方法和基于深度学习的方法两方面概述了用于不同类别UDA的最新方法。最后，我们收集了常用的基准数据集，并报告了UDA在视觉识别问题上的最新方法的结果。<br>
+- [方法分类](https://tva1.sinaimg.cn/large/006C3FgEgy1gxskidkxa1j316s0oy7ic.jpg)
+- [在Office + Caltech-10上的精度](https://tva1.sinaimg.cn/large/006C3FgEgy1gxskl1gh8qj31es0hcam6.jpg)
+- [在Office-Home上的精度](https://tva1.sinaimg.cn/large/006C3FgEgy1gxskmgct0bj31iw0qawxf.jpg)
+- [在VisDA-2017上的精度](https://tva1.sinaimg.cn/large/006C3FgEgy1gxsko6wgunj31f40iqqg4.jpg)
+- [在Office-31上的精度](https://tva1.sinaimg.cn/large/006C3FgEgy1gxskpaj0lcj30u00mo11z.jpg)
+
+
+
 
 
 
